@@ -1,5 +1,2 @@
 # basic
-./project/settings.py
-./nohup*
-./polls/*
-./README.md
+settings.py
