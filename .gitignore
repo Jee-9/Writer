@@ -1,0 +1,4 @@
+# basic
+./project/settings.py
+./nohup*
+./polls/*
