@@ -2,3 +2,4 @@
 ./project/settings.py
 ./nohup*
 ./polls/*
+./README.md
