@@ -1,0 +1,42 @@
+<html>
+    <head>
+        {% load static %}
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="{% static '/vendor/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">      
+    </head>
+    <body> 
+        <div class="container shadow min-vh-100 py-2">
+            <div class="row">
+                <div class="col item-wrapper" style="align-items: center;">
+                    <div class="row item-info-box bar" style="top:10px; width:95%;">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-2" style="padding-left:10px;">
+                            <span class="bar-elem selected" id="main">메인</span>
+                        </div>
+                        <div class="col-2" style="padding-left:10px;">
+                            <span class="bar-elem" id="think">생각</span>
+                        </div>
+                        <div class="col-2" style="padding-left:10px;">
+                            <span class="bar-elem" id="day">하루</span>
+                        </div>
+                        <div class="col-2" style="padding-left:10px;">
+                            <span class="bar-elem" id="photo">앨범</span>
+                        </div>
+                        <div class="col-2" style="padding-left:10px;">
+                            <span class="bar-elem" id="visitor">방명록</span>
+                        </div>
+                        <div class="col-1">
+                        </div>
+                    </div>
+                    <img src="{% static '/image/main.png' %}" width="100%">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="{% static '/js/main.js' %}"></script>
+</html>

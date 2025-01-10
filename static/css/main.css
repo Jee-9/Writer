@@ -1,0 +1,49 @@
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+@media screen and (max-width:500px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+.item-wrapper {
+    position: relative;
+    background-image : url('../image/background-color.png');
+    height: 100vh;
+}
+.item-info-box {
+    position: absolute;
+    top: 130px;
+    left:30px;
+}
+.title-hi {
+    font-weight:600;
+    font-family: 'Song Myung', serif;
+    font-size:18px;
+}
+.bar {
+    height: 60px;
+    vertical-align:bottom;
+    width: 100%;
+}
+.bar-elem {
+    line-height:90px;
+    font-family: 'Song Myung', serif;
+    font-size:16px;
+    cursor: pointer;
+}
+.selected {
+     color: #FFC0CB;
+}
+.main-text {
+    font-family: 'Song Myung', serif;
+    font-size:18px;
+}
+
+
+
+

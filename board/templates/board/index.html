@@ -1,0 +1,85 @@
+<html>
+    <head>
+        {% load static %}
+        <meta charset = "utf-8">
+        <title></title>
+
+        <link rel="stylesheet" type="text/css" href="{% static '/vendor/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+        <!--<script type="text/javascript" src="static/js/main.js"></script>-->        
+    </head>
+    <body>
+        <script>
+            let target = document.querySelectorAll('.bar-elem');
+            console.log(target);
+            target.forEach((t) => t.addEventListener("click", function(event){
+                target.forEach(function(t){
+                    document.getElementById(t.id).classList.remove("selected");
+                });
+                document.getElementById(event.target.id).classList.add("selected"); 
+            }));
+        </script>
+        <div class="container shadow min-vh-100 py-2">
+            <div class="row">
+                <div class="col item-wrapper">
+                    <div class="row" style="height:350px;">
+                        <div class="col" style="background-color:#345F53;">
+                            <div class="bar row">
+                                <div class="col-1">
+                                </div>
+                                <div class="col-2" style="padding-left:20px;">
+                                    <span class="bar-elem selected" id="bar1">메인</span>
+                                </div>
+                                <div class="col-2" style="padding-left:20px;">
+                                    <span class="bar-elem" id="bar2">생각</span>
+                                </div>
+                                <div class="col-2" style="padding-left:20px;">
+                                    <span class="bar-elem" id="bar3">하루</span>
+                                </div>
+                                <div class="col-2" style="padding-left:20px;">
+                                    <span class="bar-elem" id="bar4">앨범</span>
+                                </div>
+                                <div class="col-2" style="padding-left:20px;">
+                                    <span class="bar-elem" id="bar5">방명록</span>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                            </div>
+                            <div style="position:absolute; bottom:5px; right:10px;">
+                                <span class="title-hi">안녕하세요.</span><br>
+                                <span class="title-hi">단비의 공간에 오신 것을 환영합니다.</span>
+                            </div>
+                            <div class="item-info-box">
+                                <img src="https://cdn.pixabay.com/photo/2024/05/10/12/11/writer-8752968_1280.jpg" width="300px" height="370px">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="position:absolute; right:10px; padding-top:30px; text-align: right; width:50%;">
+                        <span class="main-text">세상 속으로...</span><br><br>
+                        <span class="main-text">1. 가을차 한 잔 하실래요</span><br>
+                        <span class="main-text">2. 비오는 가을날에, 보고 싶어서</span><br>
+                        <span class="main-text">3. 가을꽃비</span><br>
+                        <span class="main-text">4. 내게도 이런 사랑이 왔으면 좋겠다</span><br>
+                        <span class="main-text">5. 내 잊어주리라</span><br>
+                        <span class="main-text">6. 흔적...하나</span><br>
+                        <span class="main-text">7. 슬픔 얼룩진 여울 한 움큼</span><br>
+                        <span class="main-text">8. 사랑하고 싶다</span><br>
+                        <span class="main-text">9. 번호금지</span><br>
+                        <span class="main-text">10. 내 예쁜 사랑을 위하여</span><br>
+                        <span class="main-text">11. 단비의 고운 사랑</span>
+                    </div>
+                    <div style="position:absolute; left:30px; padding-top:200px; width:50%;">
+                        <span class="main-text">햇살 맞으며...</span><br><br>
+                        <span class="main-text">1. 마음을 모아서</span><br>
+                        <span class="main-text">2. 하늘대문이 보입니다</span><br>
+                        <span class="main-text">3. 세상으로 올 때처럼</span><br>
+                        <span class="main-text">4. 내가 나로 남아야함은</span><br>
+                        <span class="main-text">5. 부족한 듯 넘치는 행복</span><br>
+                        <span class="main-text">6. 그대 편안하기를</span><br>
+                        <span class="main-text">7. 또 하루가 갑니다</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
